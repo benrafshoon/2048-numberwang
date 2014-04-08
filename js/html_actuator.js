@@ -8,7 +8,7 @@ function HTMLActuator() {
   this.gameContainer    = document.querySelector('.game-container')
   this.rotateButton     = document.querySelector(".rotate-button");
   this.boardContainer   = document.querySelector(".board-container");
-
+  this.thatsNumberwang = document.querySelector("#thats-numberwang");
   this.score = 0;
 }
 
@@ -276,6 +276,7 @@ HTMLActuator.prototype.announce = function (message) {
   announce.classList.add("announcement");
   announce.textContent = message;
   this.announcer.appendChild(announce);
+  this.thatsNumberwang.play()
 };
 
 /*
